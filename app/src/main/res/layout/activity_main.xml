@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="day713.test.phy.xianyu.MainActivity">
+
+
+<FrameLayout
+    android:id="@+id/replaceFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/main_img_xian"
+    />
+
+
+        <ImageView
+            android:id="@+id/main_img_xian"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:orientation="horizontal"
+            android:layout_above="@+id/rg"
+            android:scaleType="fitXY"
+            android:src="@drawable/star_pond_mask"/>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/main_rb_xianyu"
+            style="@style/radioButton"
+            android:text="咸鱼"
+            android:drawableTop="@drawable/main_tab_one"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/main_rb_yutang"
+            style="@style/radioButton"
+            android:text="鱼塘"
+            android:drawableTop="@drawable/main_tab_two"/>
+        <RadioButton
+            style="@style/radioButton"
+            android:text="发布"
+            android:clickable="false"
+            android:drawableTop="@drawable/comui_tab_home"/>
+        <RadioButton
+            android:id="@+id/main_rb_msg"
+            style="@style/radioButton"
+            android:text="消息"
+            android:drawableTop="@drawable/main_tab_three"/>
+        <RadioButton
+            android:id="@+id/main_rb_mine"
+            style="@style/radioButton"
+            android:text="我的"
+            android:drawableTop="@drawable/main_tab_four"/>
+
+    </RadioGroup>
+        <ImageView
+            android:id="@+id/main_img_fabu"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/comui_tab_post"
+            android:layout_marginBottom="16dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="88dp"
+    android:layout_height="88dp">
+    <ImageView
+        android:id="@+id/imageItem"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/toggle"
+        >
+
+        <ToggleButton
+            android:id="@+id/toggle_button"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/plugin_camera_pic_choose_selector"
+            android:textOff="@null"
+            android:textOn="@null"
+            />
+        <ToggleButton
+            android:id="@+id/choosedbt"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/plugin_camera_choosed"
+            android:padding="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="6dp"
+            android:textOff="@null"
+            android:textOn="@null"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
